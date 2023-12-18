@@ -1,0 +1,276 @@
+main {
+  font-family: MonsterHunter, sans-serif;
+}
+.nav-wrapper {
+  padding: 2rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #343434;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__links {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  transition: all 0.15s ease-in-out;
+  border-radius: 6px;
+}
+
+.nav-wrapper:has(.hamburger-btn input[type="checkbox"]:checked) .nav__links {
+  height: 120px;
+}
+
+.nav-wrapper.nav-wrapper:has(.hamburger-btn input[type="checkbox"]:checked)
+  .menu-open {
+  display: none;
+}
+
+.nav-wrapper.nav-wrapper:has(.hamburger-btn input[type="checkbox"]:checked)
+  .menu-close {
+  display: block;
+}
+
+/* .nav__heading {} */
+
+.hamburger-btn {
+  background: transparent;
+  display: flex;
+  border: 0;
+}
+
+.hamburger-btn input[type="checkbox"] {
+  appearance: none;
+}
+
+.menu-close {
+  display: none;
+}
+
+.nav__img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.content__heading {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: clamp(200px, 100%, 400px);
+  transition: all 0.3s ease-in-out;
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.15s ease-in-out;
+}
+
+/* TODO:  MAKE USE OF JS TO  AVOID REPETITION */
+
+.product__img-wrapper:hover .steak-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .steak-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.steak-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+.product__img-wrapper:hover .palico-bag-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .palico-bag-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.palico-bag-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+.product__img-wrapper:hover .palamute-bag-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .palamute-bag-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.palamute-bag-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+.product__img-wrapper:hover .royal-order-bag-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .royal-order-bag-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.royal-order-bag-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+.product__img-wrapper:hover .patch-v1-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .patch-v1-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.patch-v1-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+.product__img-wrapper:hover .patch-v2-primary {
+  display: none;
+  opacity: 0;
+}
+
+.product__img-wrapper:hover .patch-v2-secondary {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product__img.patch-v2-secondary {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ======================================== */
+
+/* tablet above */
+@media screen and (min-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: nowrap; /* so that the links go in line with the logo */
+  }
+
+  /* so that the links won't eat too much space */
+  .nav:has(.hamburger-btn input[type="checkbox"]:checked) .nav__links {
+    height: 100%;
+  }
+
+  .nav__links {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    list-style: none;
+  }
+
+  /* to reduce the width of 100% on mobile */
+  .nav__link {
+    width: auto;
+  }
+
+  /* hide hamburger menu */
+  .hamburger-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-wrapper {
+    padding: 2rem 4rem;
+  }
+  .nav__links {
+    gap: 2rem;
+  }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

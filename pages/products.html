@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterwear</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-wrapper">
+        <section class="nav">
+          <section class="nav__logo">
+            <img
+              src="../assets/swords.png"
+              alt="Icon of a black and white sword"
+              class="nav__img"
+            />
+            <h1 class="nav__heading text-cursor">Wyverian Masterwear</h1>
+          </section>
+          <button class="hamburger-btn">
+            <label for="dropdown">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu-open link-cursor"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu-close link-cursor"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+              </svg>
+            </label>
+            <input type="checkbox" id="dropdown" />
+          </button>
+        </section>
+        <ul class="nav__links">
+          <li class="nav__link link-cursor">Login</li>
+          <li class="nav__link link-cursor">Sign up</li>
+        </ul>
+      </nav>
+      <section>
+        <h2 class="content__heading text-cursor">Our Products</h2>
+        <section class="products">
+          <!--  TODO: MAKE USE OF JS TO AVOID REPETITION  -->
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/steak-bag-0.webp"
+                alt=""
+                class="product__img steak-primary"
+              />
+              <img
+                src="../assets/steak-bag-1.webp"
+                alt=""
+                class="product__img steak-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Steak Bag</h3>
+            <p class="product__price text-cursor">$24.00</p>
+          </section>
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/palico-bag-0.webp"
+                alt=""
+                class="product__img palico-bag-primary"
+              />
+              <img
+                src="../assets/palico-bag-1.webp"
+                alt=""
+                class="product__img palico-bag-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Palico Bag</h3>
+            <p class="product__price text-cursor">$27.00</p>
+          </section>
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/palamute-bag-0.webp"
+                alt=""
+                class="product__img palamute-bag-primary"
+              />
+              <img
+                src="../assets/palamute-bag-1.webp"
+                alt=""
+                class="product__img palamute-bag-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Palamute Bag</h3>
+            <p class="product__price text-cursor">$27.00</p>
+          </section>
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/royal-order-bag-0.webp"
+                alt=""
+                class="product__img royal-order-bag-primary"
+              />
+              <img
+                src="../assets/royal-order-bag-1.webp"
+                alt=""
+                class="product__img royal-order-bag-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Royal Order Bag</h3>
+            <p class="product__price text-cursor">$40.00</p>
+          </section>
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/patch-v1-0.webp"
+                alt=""
+                class="product__img patch-v1-primary"
+              />
+              <img
+                src="../assets/patch-v1-1.webp"
+                alt=""
+                class="product__img patch-v1-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Patch v1</h3>
+            <p class="product__price text-cursor">$15.00</p>
+          </section>
+          <section class="product">
+            <section class="product__img-wrapper">
+              <img
+                src="../assets/patch-v2-0.webp"
+                alt=""
+                class="product__img patch-v2-primary"
+              />
+              <img
+                src="../assets/patch-v2-1.webp"
+                alt=""
+                class="product__img patch-v2-secondary"
+              />
+            </section>
+            <h3 class="product__heading text-cursor">Patch v2</h3>
+            <p class="product__price text-cursor">$15.00</p>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

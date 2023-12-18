@@ -73,6 +73,11 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .text-cursor {
   cursor: url("../assets/cursor/mhw_text_red.cur"), auto;
 }

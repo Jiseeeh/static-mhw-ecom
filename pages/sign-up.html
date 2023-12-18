@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/auth.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-wrapper">
+        <section class="nav">
+          <section class="nav__logo">
+            <img
+              src="../assets/swords.png"
+              alt="Icon of a black and white sword"
+              class="nav__img"
+            />
+            <h1 class="nav__heading text-cursor">Wyverian Masterwear</h1>
+          </section>
+          <button class="hamburger-btn">
+            <label for="dropdown">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu-open link-cursor"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu-close link-cursor"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+              </svg>
+            </label>
+            <input type="checkbox" id="dropdown" />
+          </button>
+        </section>
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a href="./login.html" class="link-cursor">Login</a>
+          </li>
+          <li class="nav__link link-cursor">
+            <a href="./sign-up.html" class="link-cursor">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="form-wrapper">
+        <form action="" class="form">
+          <h1 class="form__heading">Sign up</h1>
+          <h2 class="form__subheading">Please enter your email and password</h2>
+          <input type="text" placeholder="E-MAIL" class="text-cursor" />
+          <input type="password" placeholder="PASSWORD" / class="text-cursor">
+          <input
+            type="password"
+            placeholder="REPEAT PASSWORD"
+            class="text-cursor"
+          />
+          <input type="submit" value="SIGN UP" class="link-cursor" />
+          <h3>
+            New here?
+            <a href="./sign-up.html"
+              ><u class="link-cursor">create an account</u></a
+            >
+          </h3>
+        </form>
+      </section>
+      <footer>
+        <img src="../assets/copyright.png" alt="copyright symbol" />
+        <h4>Monster Hunter. All rights reserved.</h4>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+main {
+  font-family: MonsterHunter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.form-wrapper {
+  display: grid;
+  place-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: clamp(200px, 100%, 400px);
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.form input[type="submit"] {
+  background: #343434;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

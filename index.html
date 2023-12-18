@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Hunter</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <article class="hero">
+        <section class="hero__content">
+          <h1 class="hero__heading">Discover the world of Monster Hunter</h1>
+          <h2 class="hero__subheading">
+            Explore vast landscapes, discover new monsters and craft your
+            perfect hunting strategy with our guides
+          </h2>
+          <!-- MODEL -->
+          <model-viewer
+            class="hero__model"
+            alt="Model of Teostra"
+            src="./assets/model/teostra_monster_hunter.glb"
+            shadow-intensity="1"
+            camera-controls
+            touch-action="pan-y"
+            autoplay
+            poster=""
+          ></model-viewer>
+          <!-- MODEL -->
+          <button class="hero__btn">
+            <a href="#">Get Started</a>
+          </button>
+        </section>
+      </article>
+    </main>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>

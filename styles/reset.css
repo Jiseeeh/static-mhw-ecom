@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MonsterHunter";
+  src: url("../assets/fonts/monsterhunter.ttf") format("truetype");
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

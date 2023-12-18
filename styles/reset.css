@@ -11,6 +11,7 @@
   */
 * {
   margin: 0;
+  cursor: url("../assets/cursor/mhw_normal.cur"), auto;
 }
 /*
     Typographic tweaks!
@@ -70,4 +71,12 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.text-cursor {
+  cursor: url("../assets/cursor/mhw_text_red.cur"), auto;
+}
+
+.link-cursor {
+  cursor: url("../assets/cursor/mhw_link_hand.cur"), auto;
 }
